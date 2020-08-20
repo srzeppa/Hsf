@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.ApplicatonProcess.August2020.Blazor.Server", "Hsf.ApplicatonProcess.August2020.Blazor\Server\Hsf.ApplicatonProcess.August2020.Blazor.Server.csproj", "{D8C9804F-F87C-4089-AB71-AF92BADC8D39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.ApplicatonProcess.August2020.Blazor.Client", "Hsf.ApplicatonProcess.August2020.Blazor\Client\Hsf.ApplicatonProcess.August2020.Blazor.Client.csproj", "{CD0DE028-61BF-4465-83EB-8E28AD8B7375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.ApplicatonProcess.August2020.Blazor.Shared", "Hsf.ApplicatonProcess.August2020.Blazor\Shared\Hsf.ApplicatonProcess.August2020.Blazor.Shared.csproj", "{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8C9804F-F87C-4089-AB71-AF92BADC8D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C9804F-F87C-4089-AB71-AF92BADC8D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C9804F-F87C-4089-AB71-AF92BADC8D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C9804F-F87C-4089-AB71-AF92BADC8D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0DE028-61BF-4465-83EB-8E28AD8B7375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0DE028-61BF-4465-83EB-8E28AD8B7375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0DE028-61BF-4465-83EB-8E28AD8B7375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0DE028-61BF-4465-83EB-8E28AD8B7375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
