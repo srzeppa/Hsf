@@ -2,45 +2,59 @@
 @using Hsf.ApplicatonProcess.August2020.Blazor.Shared
 @inject HttpClient Http
 
-<h1>Weather forecast</h1>
+<h1>Applicant</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
-
-@if (forecasts == null)
+@if (applicants == null || !applicants.Any())
 {
-    <p><em>Loading...</em></p>
+    <p><em>There's no applicants in database yet...</em></p>
 }
 else
 {
     <table class="table">
         <thead>
             <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Family name</th>
+                <th>Address</th>
+                <th>Country of origin</th>
+                <th>Email address</th>
+                <th>Age</th>
+                <th>Hired</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts)
+            @foreach (var applicant in applicants)
             {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
+            <tr>
+                <td>@applicant.Id</td>
+                <td>@applicant.Name</td>
+                <td>@applicant.FamilyName</td>
+                <td>@applicant.Address</td>
+                <td>@applicant.CountryOfOrigin</td>
+                <td>@applicant.EmailAddress</td>
+                <td>@applicant.Age</td>
+                <td>@bool.Parse(applicant.Hired.ToString())</td>
+                <td><button class="btn btn-danger" id="@applicant.Id" @onclick="() => OnDeleteClick(applicant.Id)">Delete</button></td>
+            </tr>
             }
         </tbody>
     </table>
 }
 
 @code {
-    private WeatherForecast[] forecasts;
+    private Applicant[] applicants;
+    private int deleteId;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        applicants = await Http.GetFromJsonAsync<Applicant[]>("Applicant/Get");
     }
 
+    private async Task OnDeleteClick(int id)
+    {
+        await Http.DeleteAsync($"Applicant/Delete?id={id}");
+        
+    }
 }

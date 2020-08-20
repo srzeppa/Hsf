@@ -1,4 +1,4 @@
-﻿namespace Hsf.ApplicatonProcess.August2020.Domain.Models
+﻿namespace Hsf.ApplicatonProcess.August2020.Blazor.Shared
 {
     public class Applicant
     {

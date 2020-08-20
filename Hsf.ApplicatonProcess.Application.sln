@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.ApplicatonProcess.Augus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.ApplicatonProcess.August2020.Blazor.Shared", "Hsf.ApplicatonProcess.August2020.Blazor\Shared\Hsf.ApplicatonProcess.August2020.Blazor.Shared.csproj", "{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.ApplicatonProcess.August2020.Domain", "Hsf.ApplicatonProcess.August2020.Domain\Hsf.ApplicatonProcess.August2020.Domain.csproj", "{F45D219C-D8E9-4192-B0C8-DAF5CCE90D8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4C57302-5034-4A2C-940A-B3C3DA1F9DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45D219C-D8E9-4192-B0C8-DAF5CCE90D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45D219C-D8E9-4192-B0C8-DAF5CCE90D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45D219C-D8E9-4192-B0C8-DAF5CCE90D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45D219C-D8E9-4192-B0C8-DAF5CCE90D8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
