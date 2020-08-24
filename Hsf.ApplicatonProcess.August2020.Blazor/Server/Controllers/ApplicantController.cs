@@ -25,7 +25,7 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
             var result = validator.Validate(applicant);
             if (!result.IsValid)
             {
-                return BadRequest(string.Join(" | ", result.Errors));
+                return BadRequest(string.Join("\n", result.Errors));
             }
             await _applicantService.Save(applicant);
             return Ok();
@@ -45,6 +45,19 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
             _applicantService.Delete(id);
         }
 
-        //todo put 
+        [HttpGet]
+        [Route("GetById")]
+        public Applicant GetById(int id)
+        {
+            return _applicantService.GetById(id);
+        }
+
+        [HttpPut]
+        [Route("Edit")]
+        public async Task<IActionResult> Edit([FromBody] Applicant applicant)
+        {
+            await _applicantService.Edit(applicant);
+            return Ok();
+        }
     }
 }

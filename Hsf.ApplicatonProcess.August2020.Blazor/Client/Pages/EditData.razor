@@ -1,8 +1,10 @@
-@page "/adddata"
+@page "/editdata"
 @using Hsf.ApplicatonProcess.August2020.Blazor.Shared
 @inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.WebUtilities
 
-<h1>Add Applicant</h1>
+<h1>Edit Applicant</h1>
 
 <div style="color:@color">@errorMessage</div>
 
@@ -39,10 +41,13 @@
     private Applicant applicant = new Applicant();
     private string errorMessage = "";
     private string color = "";
+    private string applicantId;
 
     private async Task HandleSubmit(EditContext editContext)
     {
-        var result = await Http.PostAsJsonAsync<Applicant>("applicant/insert", applicant);
+        var uri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
+        applicant.Id = int.Parse(QueryHelpers.ParseQuery(uri.Query).GetValueOrDefault("id"));
+        var result = await Http.PutAsJsonAsync<Applicant>("Applicant/Edit", applicant);
         if (result.StatusCode != System.Net.HttpStatusCode.OK)
         {
             color = "red";
@@ -51,7 +56,15 @@
         else
         {
             color = "green";
-            errorMessage = "User added successfully! :D";
+            errorMessage = "User edited successfully! :D";
         }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var uri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
+        QueryHelpers.ParseQuery(uri.Query).TryGetValue("id", out var applicantId);
+        var result = await Http.GetAsync($"Applicant/GetById?id={applicantId}");
+        applicant = await result.Content.ReadFromJsonAsync<Applicant>();
     }
 }

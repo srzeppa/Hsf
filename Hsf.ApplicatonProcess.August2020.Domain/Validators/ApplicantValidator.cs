@@ -7,7 +7,7 @@ namespace Hsf.ApplicatonProcess.August2020.Domain.Validators
     {
         public ApplicantValidator()
         {
-            RuleFor(x => x.Name).Null().MinimumLength(5);
+            RuleFor(x => x.Name).NotEmpty().MinimumLength(5);
             RuleFor(x => x.FamilyName).MinimumLength(5).NotEmpty();
             RuleFor(x => x.Address).NotNull().NotEmpty().MinimumLength(10);
             RuleFor(x => x.EmailAddress).NotNull().NotEmpty().EmailAddress();//todo top level domain
