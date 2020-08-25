@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Hsf.ApplicatonProcess.August2020.Domain.Models;
+using Hsf.ApplicatonProcess.August2020.Domain.Providers;
 using Hsf.ApplicatonProcess.August2020.Domain.Services;
 using Hsf.ApplicatonProcess.August2020.Domain.Validators;
 using Microsoft.AspNetCore.Mvc;
@@ -11,17 +12,19 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
     public class ApplicantController : ControllerBase
     {
         private readonly IApplicantService _applicantService;
+        private readonly ICountriesProvider _countriesProvider;
 
-        public ApplicantController(IApplicantService applicantService)
+        public ApplicantController(IApplicantService applicantService, ICountriesProvider countriesProvider)
         {
             _applicantService = applicantService;
+            _countriesProvider = countriesProvider;
         }
 
         [HttpPost]
         [Route("Insert")]
         public async Task<IActionResult> Insert([FromBody] Applicant applicant)
         {
-            var validator = new ApplicantValidator();
+            var validator = new ApplicantValidator(_countriesProvider);
             var result = validator.Validate(applicant);
             if (!result.IsValid)
             {

@@ -21,6 +21,9 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                })
+                .ConfigureAppConfiguration((hostContext, config) => {
+                    config.AddJsonFile("appsettings.json", true, false);
                 });
     }
 }

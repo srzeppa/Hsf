@@ -13,6 +13,8 @@ using Hsf.ApplicatonProcess.August2020.Domain.Models;
 using FluentValidation;
 using Hsf.ApplicatonProcess.August2020.Domain.Validators;
 using Microsoft.OpenApi.Models;
+using Hsf.ApplicatonProcess.August2020.Domain.Providers;
+using Hsf.ApplicatonProcess.August2020.Domain.Config;
 
 namespace Hsf.ApplicatonProcess.August2020.Blazor.Server
 {
@@ -33,11 +35,14 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server
             services.AddTransient<IApplicantService, ApplicantService>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddHttpClient<ICountriesProvider, CountriesProvider>();
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+
+            AddConfigurations(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,6 +77,11 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server
                 endpoints.MapControllers();
                 endpoints.MapFallbackToFile("index.html");
             });
+        }
+
+        public void AddConfigurations(IServiceCollection services)
+        {
+            services.Configure<CountriesConfig>(Configuration.GetSection("CountriesConfig"));
         }
     }
 }
