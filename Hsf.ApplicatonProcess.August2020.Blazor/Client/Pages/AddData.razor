@@ -31,6 +31,7 @@
         Hired: <InputCheckbox id="hired" @bind-Value="applicant.Hired" />
     </div>
 
+    <button class="btn btn-warning" @onclick="Reset" @onclick:preventDefault>Cancel</button>
     <input type="submit" class="btn btn-primary" value="Save" />
 
 </EditForm>
@@ -53,5 +54,15 @@
             color = "green";
             errorMessage = "User added successfully! :D";
         }
+    }
+
+    private void Reset()
+    {
+        applicant.Address = "";
+        applicant.Age = 0;
+        applicant.CountryOfOrigin = "";
+        applicant.EmailAddress = "";
+        applicant.FamilyName = "";
+        applicant.Name = "";
     }
 }
