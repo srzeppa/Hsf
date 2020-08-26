@@ -3,6 +3,7 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 @using Microsoft.AspNetCore.WebUtilities
+@inject IJSRuntime JsRuntime;
 
 <h1>Edit Applicant</h1>
 
@@ -42,7 +43,6 @@
     private Applicant applicant = new Applicant();
     private string errorMessage = "";
     private string color = "";
-    private string applicantId;
 
     private async Task HandleSubmit(EditContext editContext)
     {
@@ -69,13 +69,17 @@
         applicant = await result.Content.ReadFromJsonAsync<Applicant>();
     }
 
-    private void Reset()
+    private async Task Reset()
     {
-        applicant.Address = "";
-        applicant.Age = 0;
-        applicant.CountryOfOrigin = "";
-        applicant.EmailAddress = "";
-        applicant.FamilyName = "";
-        applicant.Name = "";
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Are you sure?");
+        if (confirmed)
+        {
+            applicant.Address = "";
+            applicant.Age = 0;
+            applicant.CountryOfOrigin = "";
+            applicant.EmailAddress = "";
+            applicant.FamilyName = "";
+            applicant.Name = "";
+        }
     }
 }

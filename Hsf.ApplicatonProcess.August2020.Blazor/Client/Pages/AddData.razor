@@ -1,6 +1,7 @@
 @page "/adddata"
 @using Hsf.ApplicatonProcess.August2020.Blazor.Shared
 @inject HttpClient Http
+@inject IJSRuntime JsRuntime;
 
 <h1>Add Applicant</h1>
 
@@ -56,13 +57,17 @@
         }
     }
 
-    private void Reset()
+    private async Task Reset()
     {
-        applicant.Address = "";
-        applicant.Age = 0;
-        applicant.CountryOfOrigin = "";
-        applicant.EmailAddress = "";
-        applicant.FamilyName = "";
-        applicant.Name = "";
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Are you sure?");
+        if (confirmed)
+        {
+            applicant.Address = "";
+            applicant.Age = 0;
+            applicant.CountryOfOrigin = "";
+            applicant.EmailAddress = "";
+            applicant.FamilyName = "";
+            applicant.Name = "";
+        }
     }
 }
