@@ -3,7 +3,6 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 @using Microsoft.AspNetCore.WebUtilities
-@inject IJSRuntime JsRuntime;
 
 <h1>Edit Applicant</h1>
 
@@ -34,7 +33,6 @@
         Hired: <InputCheckbox id="hired" @bind-Value="applicant.Hired" />
     </div>
 
-    <button class="btn btn-warning" @onclick="Reset" @onclick:preventDefault>Cancel</button>
     <input type="submit" class="btn btn-primary" value="Save" />
 
 </EditForm>
@@ -43,6 +41,7 @@
     private Applicant applicant = new Applicant();
     private string errorMessage = "";
     private string color = "";
+    private string applicantId;
 
     private async Task HandleSubmit(EditContext editContext)
     {
@@ -67,19 +66,5 @@
         QueryHelpers.ParseQuery(uri.Query).TryGetValue("id", out var applicantId);
         var result = await Http.GetAsync($"Applicant/GetById?id={applicantId}");
         applicant = await result.Content.ReadFromJsonAsync<Applicant>();
-    }
-
-    private async Task Reset()
-    {
-        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Are you sure?");
-        if (confirmed)
-        {
-            applicant.Address = "";
-            applicant.Age = 0;
-            applicant.CountryOfOrigin = "";
-            applicant.EmailAddress = "";
-            applicant.FamilyName = "";
-            applicant.Name = "";
-        }
     }
 }

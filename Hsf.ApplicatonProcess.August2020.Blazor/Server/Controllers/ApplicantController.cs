@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Hsf.ApplicatonProcess.August2020.Domain.Models;
@@ -7,6 +8,7 @@ using Hsf.ApplicatonProcess.August2020.Domain.Services;
 using Hsf.ApplicatonProcess.August2020.Domain.Storage;
 using Hsf.ApplicatonProcess.August2020.Domain.Validators;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
 {
@@ -15,17 +17,22 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
     {
         private readonly IApplicantService _applicantService;
         private readonly ICountriesProvider _countriesProvider;
+        private readonly ILogger<ApplicantController> _logger;
 
-        public ApplicantController(IApplicantService applicantService, ICountriesProvider countriesProvider)
+        public ApplicantController(IApplicantService applicantService,
+            ICountriesProvider countriesProvider,
+            ILogger<ApplicantController> logger)
         {
             _applicantService = applicantService;
             _countriesProvider = countriesProvider;
+            _logger = logger;
         }
 
         [HttpPost]
         [Route("Insert")]
-        public async Task<IActionResult> Insert([FromBody] Applicant applicant)
+        public ActionResult Insert([FromBody] Applicant applicant)
         {
+            _logger.LogInformation("Start inserting applicant");
             var validator = new ApplicantValidator(_countriesProvider);
             var result = validator.Validate(applicant);
             if (!result.IsValid)
@@ -34,7 +41,6 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
             }
 
             ApplicantStorage.Add(applicant);
-            //await _applicantService.Save(applicant);
             return Ok();
         }
 
@@ -44,6 +50,7 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
         {
             try
             {
+                _logger.LogInformation("Start confirm inserting applicant");
                 await _applicantService.Save(applicant);
                 ApplicantStorage.Remove(applicant);
                 return Ok();
@@ -58,6 +65,7 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
         [Route("Get")]
         public List<Applicant> Get()
         {
+            _logger.LogInformation("Start getting applicant from database");
             return _applicantService.Get();
         }
 
@@ -65,6 +73,7 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
         [Route("Delete")]
         public void Delete(int id)
         {
+            _logger.LogInformation($"Start deleting applicant with id: {id}");
             _applicantService.Delete(id);
         }
 
@@ -72,6 +81,7 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
         [Route("GetById")]
         public Applicant GetById(int id)
         {
+            _logger.LogInformation($"Start getting applicant with id {id}");
             return _applicantService.GetById(id);
         }
 
@@ -79,6 +89,7 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers
         [Route("Edit")]
         public async Task<IActionResult> Edit([FromBody] Applicant applicant)
         {
+            _logger.LogInformation($"Start edit applicant with id {applicant.Id}");
             await _applicantService.Edit(applicant);
             return Ok();
         }

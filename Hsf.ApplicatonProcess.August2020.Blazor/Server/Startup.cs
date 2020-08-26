@@ -1,20 +1,16 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Linq;
 using Hsf.ApplicatonProcess.August2020.Domain.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
 using Hsf.ApplicatonProcess.August2020.Domain.Services;
-using Hsf.ApplicatonProcess.August2020.Domain.Models;
-using FluentValidation;
-using Hsf.ApplicatonProcess.August2020.Domain.Validators;
 using Microsoft.OpenApi.Models;
 using Hsf.ApplicatonProcess.August2020.Domain.Providers;
 using Hsf.ApplicatonProcess.August2020.Domain.Config;
+using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace Hsf.ApplicatonProcess.August2020.Blazor.Server
 {
@@ -77,6 +73,7 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Server
                 endpoints.MapControllers();
                 endpoints.MapFallbackToFile("index.html");
             });
+            app.UseSerilogRequestLogging();
         }
 
         public void AddConfigurations(IServiceCollection services)
