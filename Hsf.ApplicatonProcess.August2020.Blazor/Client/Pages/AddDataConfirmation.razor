@@ -1,0 +1,54 @@
+@page "/adddataconfirmation"
+@using Hsf.ApplicatonProcess.August2020.Blazor.Shared
+@inject HttpClient Http
+@inject IJSRuntime JsRuntime;
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.WebUtilities
+
+<h1>Confirm Applicant</h1>
+
+<p>Name: @applicant.Name</p>
+<p>Family Name: @applicant.FamilyName</p>
+<p>Address: @applicant.Address</p>
+<p>Email address: @applicant.EmailAddress</p>
+<p>Age: @applicant.Age</p>
+<p>Country of origin: @applicant.CountryOfOrigin</p>
+<p>Is hired: @applicant.Hired</p>
+
+<button class="btn btn-danger" @onclick="HandleCancel">Cancel</button>
+<button class="btn btn-success" @onclick="HandleSubmit">Ok</button>
+
+@code {
+    private Applicant applicant = new Applicant();
+    private string errorMessage = "";
+    private string color = "";
+
+    private async Task HandleSubmit()
+    {
+        var result = await Http.PostAsJsonAsync<Applicant>("applicant/Confirm-Insert", applicant);
+        if (result.StatusCode != System.Net.HttpStatusCode.OK)
+        {
+            color = "red";
+            errorMessage = await result.Content.ReadAsStringAsync();
+        }
+        else
+        {
+            color = "green";
+            errorMessage = "User added successfully! :D";
+            NavigationManager.NavigateTo($"/FetchData");
+        }
+    }
+
+    private void HandleCancel()
+    {
+        NavigationManager.NavigateTo($"/AddData");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var uri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
+        QueryHelpers.ParseQuery(uri.Query).TryGetValue("id", out var applicantId);
+        var result = await Http.GetAsync($"Applicant/GetFromStorage?id={applicantId}");
+        applicant = await result.Content.ReadFromJsonAsync<Applicant>();
+    }
+}

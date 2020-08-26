@@ -1,7 +1,8 @@
 @page "/adddata"
 @using Hsf.ApplicatonProcess.August2020.Blazor.Shared
-@inject HttpClient Http
+@inject HttpClient Http;
 @inject IJSRuntime JsRuntime;
+@inject NavigationManager NavigationManager;
 
 <h1>Add Applicant</h1>
 
@@ -52,8 +53,7 @@
         }
         else
         {
-            color = "green";
-            errorMessage = "User added successfully! :D";
+            NavigationManager.NavigateTo($"/AddDataConfirmation?id={applicant.Id}");
         }
     }
 
