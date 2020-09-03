@@ -1,0 +1,261 @@
+2020-09-03 15:14:31.193 +02:00 [INF] Application Starting.
+2020-09-03 15:14:33.641 +02:00 [INF] User profile is available. Using '/Users/fawek/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-09-03 15:14:34.527 +02:00 [INF] Now listening on: https://localhost:5001
+2020-09-03 15:14:34.527 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-03 15:14:34.527 +02:00 [INF] Hosting environment: Development
+2020-09-03 15:14:34.527 +02:00 [INF] Content root path: /Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Server
+2020-09-03 15:14:34.848 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2020-09-03 15:14:34.980 +02:00 [INF] Executing endpoint 'Fallback {*path:nonfile}'
+2020-09-03 15:14:35.085 +02:00 [INF] Sending file. Request path: '/index.html'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/wwwroot/index.html'
+2020-09-03 15:14:35.086 +02:00 [INF] Executed endpoint 'Fallback {*path:nonfile}'
+2020-09-03 15:14:35.154 +02:00 [INF] Request finished in 312.1966ms 200 text/html
+2020-09-03 15:14:39.243 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2020-09-03 15:14:39.247 +02:00 [INF] Executing endpoint 'Fallback {*path:nonfile}'
+2020-09-03 15:14:39.262 +02:00 [INF] Sending file. Request path: '/index.html'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/wwwroot/index.html'
+2020-09-03 15:14:39.263 +02:00 [INF] Executed endpoint 'Fallback {*path:nonfile}'
+2020-09-03 15:14:39.285 +02:00 [INF] Request finished in 41.9385ms 200 text/html
+2020-09-03 15:14:39.371 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/bootstrap/bootstrap.min.css  
+2020-09-03 15:14:39.453 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/_framework/blazor.webassembly.js  
+2020-09-03 15:14:39.461 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/app.css  
+2020-09-03 15:14:39.558 +02:00 [INF] Sending file. Request path: '/css/app.css'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/wwwroot/css/app.css'
+2020-09-03 15:14:39.558 +02:00 [INF] Request finished in 97.049ms 200 text/css
+2020-09-03 15:14:39.559 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/open-iconic/font/css/open-iconic-bootstrap.min.css  
+2020-09-03 15:14:39.585 +02:00 [INF] Sending file. Request path: '/_framework/blazor.webassembly.js.gz'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.webassembly.js.gz'
+2020-09-03 15:14:39.588 +02:00 [INF] Sending file. Request path: '/css/bootstrap/bootstrap.min.css'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/wwwroot/css/bootstrap/bootstrap.min.css'
+2020-09-03 15:14:39.588 +02:00 [INF] Request finished in 216.7749ms 200 text/css
+2020-09-03 15:14:39.602 +02:00 [INF] Sending file. Request path: '/css/open-iconic/font/css/open-iconic-bootstrap.min.css'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css'
+2020-09-03 15:14:39.604 +02:00 [INF] Request finished in 44.9515ms 200 text/css
+2020-09-03 15:14:39.604 +02:00 [INF] Request finished in 151.2872ms 200 application/javascript
+2020-09-03 15:14:39.633 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/_framework/blazor.boot.json  
+2020-09-03 15:14:39.700 +02:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json.gz'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json.gz'
+2020-09-03 15:14:39.737 +02:00 [INF] Request finished in 101.9971ms 200 application/json
+2020-09-03 15:14:39.853 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/apple-touch-icon-precomposed.png  
+2020-09-03 15:14:39.866 +02:00 [INF] HTTP GET /apple-touch-icon-precomposed.png responded 404 in 0.8021 ms
+2020-09-03 15:14:39.869 +02:00 [INF] Request finished in 16.2726ms 404 
+2020-09-03 15:14:39.902 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/apple-touch-icon.png  
+2020-09-03 15:14:39.904 +02:00 [INF] HTTP GET /apple-touch-icon.png responded 404 in 0.0082 ms
+2020-09-03 15:14:39.905 +02:00 [INF] Request finished in 2.2887ms 404 
+2020-09-03 15:14:40.006 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/_framework/wasm/dotnet.3.2.0.js  
+2020-09-03 15:14:40.063 +02:00 [INF] Sending file. Request path: '/_framework/wasm/dotnet.3.2.0.js.gz'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/bin/Debug/netstandard2.1/wwwroot/_framework/wasm/dotnet.3.2.0.js.gz'
+2020-09-03 15:14:40.063 +02:00 [INF] Request finished in 57.6619ms 200 application/javascript
+2020-09-03 15:14:44.754 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2020-09-03 15:14:44.797 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/wwwroot/favicon.ico'
+2020-09-03 15:14:44.798 +02:00 [INF] Request finished in 43.9231ms 200 image/x-icon
+2020-09-03 15:14:44.918 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/open-iconic/font/fonts/open-iconic.woff  
+2020-09-03 15:14:44.961 +02:00 [INF] Sending file. Request path: '/css/open-iconic/font/fonts/open-iconic.woff'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/wwwroot/css/open-iconic/font/fonts/open-iconic.woff'
+2020-09-03 15:14:44.964 +02:00 [INF] Request finished in 46.1883ms 200 application/font-woff
+2020-09-03 15:15:16.847 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:15:16.863 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:15:16.956 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:15:17.152 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:15:17.428 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:15:17.596 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:15:17.646 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 674.2594ms
+2020-09-03 15:15:17.648 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:15:17.651 +02:00 [INF] Request finished in 803.9298ms 200 application/json; charset=utf-8
+2020-09-03 15:15:57.540 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/applicant/insert application/json; charset=utf-8 159
+2020-09-03 15:15:57.542 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:15:57.561 +02:00 [INF] Route matched with {action = "Insert", controller = "Applicant", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Insert(Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:15:57.754 +02:00 [INF] Start inserting applicant
+2020-09-03 15:15:57.796 +02:00 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/dsadasdas?fullText=true"
+2020-09-03 15:15:57.800 +02:00 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/dsadasdas?fullText=true"
+2020-09-03 15:16:04.059 +02:00 [INF] Received HTTP response after 6256.3147ms - "NotFound"
+2020-09-03 15:16:04.060 +02:00 [INF] End processing HTTP request after 6265.0338ms - "NotFound"
+2020-09-03 15:16:04.073 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-09-03 15:16:04.074 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 6513.2062ms
+2020-09-03 15:16:04.074 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:04.075 +02:00 [INF] Request finished in 6534.8819ms 400 text/plain; charset=utf-8
+2020-09-03 15:16:10.626 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/applicant/insert application/json; charset=utf-8 156
+2020-09-03 15:16:10.627 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:10.628 +02:00 [INF] Route matched with {action = "Insert", controller = "Applicant", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Insert(Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:10.633 +02:00 [INF] Start inserting applicant
+2020-09-03 15:16:10.635 +02:00 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Poland?fullText=true"
+2020-09-03 15:16:10.635 +02:00 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Poland?fullText=true"
+2020-09-03 15:16:10.805 +02:00 [INF] Received HTTP response after 169.8002ms - "OK"
+2020-09-03 15:16:10.805 +02:00 [INF] End processing HTTP request after 170.2313ms - "OK"
+2020-09-03 15:16:11.020 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-09-03 15:16:11.020 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 391.453ms
+2020-09-03 15:16:11.020 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:11.020 +02:00 [INF] Request finished in 394.9565ms 200 
+2020-09-03 15:16:11.047 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/GetFromStorage?id=0  
+2020-09-03 15:16:11.049 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:11.052 +02:00 [INF] Route matched with {action = "GetFromStorage", controller = "Applicant", page = ""}. Executing controller action with signature Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant GetFromStorage(Int32) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:11.065 +02:00 [INF] Executing ObjectResult, writing value of type 'Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant'.
+2020-09-03 15:16:11.069 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 16.2647ms
+2020-09-03 15:16:11.069 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:11.069 +02:00 [INF] Request finished in 22.1067ms 200 application/json; charset=utf-8
+2020-09-03 15:16:22.155 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/applicant/Confirm-Insert application/json; charset=utf-8 156
+2020-09-03 15:16:22.157 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.ConfirmInsert (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:22.163 +02:00 [INF] Route matched with {action = "ConfirmInsert", controller = "Applicant", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConfirmInsert(Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:22.166 +02:00 [INF] Start confirm inserting applicant
+2020-09-03 15:16:22.186 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:22.311 +02:00 [INF] Saved 1 entities to in-memory store.
+2020-09-03 15:16:22.317 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-09-03 15:16:22.338 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.ConfirmInsert (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 173.6339ms
+2020-09-03 15:16:22.338 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.ConfirmInsert (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:22.338 +02:00 [INF] Request finished in 183.0567ms 200 
+2020-09-03 15:16:22.353 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:16:22.355 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:22.355 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:22.355 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:16:22.367 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:22.375 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:16:22.377 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 21.3933ms
+2020-09-03 15:16:22.377 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:22.377 +02:00 [INF] Request finished in 24.2153ms 200 application/json; charset=utf-8
+2020-09-03 15:16:26.395 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:16:26.396 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:26.397 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:26.400 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:16:26.401 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:26.405 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:16:26.409 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 11.6293ms
+2020-09-03 15:16:26.410 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:26.410 +02:00 [INF] Request finished in 15.0032ms 200 application/json; charset=utf-8
+2020-09-03 15:16:31.965 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/GetById?id=1  
+2020-09-03 15:16:31.966 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetById (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:31.985 +02:00 [INF] Route matched with {action = "GetById", controller = "Applicant", page = ""}. Executing controller action with signature Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant GetById(Int32) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:31.989 +02:00 [INF] Start getting applicant with id 1
+2020-09-03 15:16:31.994 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:32.071 +02:00 [INF] Executing ObjectResult, writing value of type 'Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant'.
+2020-09-03 15:16:32.072 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetById (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 86.8562ms
+2020-09-03 15:16:32.072 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetById (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:32.072 +02:00 [INF] Request finished in 107.024ms 200 application/json; charset=utf-8
+2020-09-03 15:16:36.933 +02:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/Applicant/Edit application/json; charset=utf-8 157
+2020-09-03 15:16:36.934 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Edit (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:36.940 +02:00 [INF] Route matched with {action = "Edit", controller = "Applicant", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:36.942 +02:00 [INF] Start edit applicant with id 1
+2020-09-03 15:16:36.945 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:36.953 +02:00 [INF] Saved 1 entities to in-memory store.
+2020-09-03 15:16:36.953 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-09-03 15:16:36.953 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Edit (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 13.61ms
+2020-09-03 15:16:36.953 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Edit (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:36.954 +02:00 [INF] Request finished in 20.8248ms 200 
+2020-09-03 15:16:42.440 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:16:42.441 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:42.441 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:42.442 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:16:42.443 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:42.444 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:16:42.445 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 3.963ms
+2020-09-03 15:16:42.446 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:42.446 +02:00 [INF] Request finished in 5.4731ms 200 application/json; charset=utf-8
+2020-09-03 15:16:48.034 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:16:48.035 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:48.035 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:48.035 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:16:48.036 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:48.042 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:16:48.043 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 7.9557ms
+2020-09-03 15:16:48.045 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:48.046 +02:00 [INF] Request finished in 11.5238ms 200 application/json; charset=utf-8
+2020-09-03 15:16:49.871 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/GetById?id=1  
+2020-09-03 15:16:49.871 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetById (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:49.875 +02:00 [INF] Route matched with {action = "GetById", controller = "Applicant", page = ""}. Executing controller action with signature Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant GetById(Int32) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:49.877 +02:00 [INF] Start getting applicant with id 1
+2020-09-03 15:16:49.880 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:49.895 +02:00 [INF] Executing ObjectResult, writing value of type 'Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant'.
+2020-09-03 15:16:49.895 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetById (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 20.6526ms
+2020-09-03 15:16:49.895 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetById (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:49.896 +02:00 [INF] Request finished in 25.8234ms 200 application/json; charset=utf-8
+2020-09-03 15:16:52.005 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:16:52.006 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:52.006 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:52.009 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:16:52.010 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:52.011 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:16:52.012 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 5.3878ms
+2020-09-03 15:16:52.012 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:52.013 +02:00 [INF] Request finished in 7.758ms 200 application/json; charset=utf-8
+2020-09-03 15:16:53.001 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/Applicant/Delete?id=1  0
+2020-09-03 15:16:53.001 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Delete (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:53.004 +02:00 [INF] Route matched with {action = "Delete", controller = "Applicant", page = ""}. Executing controller action with signature Void Delete(Int32) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:16:53.005 +02:00 [INF] Start deleting applicant with id: 1
+2020-09-03 15:16:53.007 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:16:53.012 +02:00 [INF] Saved 1 entities to in-memory store.
+2020-09-03 15:16:53.016 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Delete (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 12.0228ms
+2020-09-03 15:16:53.016 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Delete (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:16:53.017 +02:00 [INF] Request finished in 15.9123ms 200 
+2020-09-03 15:17:15.251 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:17:15.257 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:17:15.261 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:17:15.289 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:17:15.290 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:17:15.291 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:17:15.291 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 29.6174ms
+2020-09-03 15:17:15.291 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:17:15.292 +02:00 [INF] Request finished in 40.8905ms 200 application/json; charset=utf-8
+2020-09-03 15:17:16.227 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:17:16.233 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:17:16.241 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:17:16.242 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:17:16.243 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:17:16.244 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:17:16.245 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 3.3354ms
+2020-09-03 15:17:16.245 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:17:16.245 +02:00 [INF] Request finished in 18.3381ms 200 application/json; charset=utf-8
+2020-09-03 15:17:23.901 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html  
+2020-09-03 15:17:23.932 +02:00 [INF] Request finished in 30.6295ms 200 text/html;charset=utf-8
+2020-09-03 15:17:23.943 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui.css  
+2020-09-03 15:17:23.988 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-09-03 15:17:23.990 +02:00 [INF] Request finished in 46.89ms 200 text/css
+2020-09-03 15:17:24.006 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-bundle.js  
+2020-09-03 15:17:24.061 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js  
+2020-09-03 15:17:24.149 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-09-03 15:17:24.149 +02:00 [INF] Request finished in 87.5902ms 200 application/javascript
+2020-09-03 15:17:24.190 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-09-03 15:17:24.190 +02:00 [INF] Request finished in 184.0406ms 200 application/javascript
+2020-09-03 15:17:24.405 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json  
+2020-09-03 15:17:24.585 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/favicon-32x32.png  
+2020-09-03 15:17:24.610 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-09-03 15:17:24.610 +02:00 [INF] Request finished in 25.7139ms 200 image/png
+2020-09-03 15:17:24.735 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/swagger/favicon-16x16.png  
+2020-09-03 15:17:24.735 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2020-09-03 15:17:24.735 +02:00 [INF] Request finished in 0.4247ms 200 image/png
+2020-09-03 15:17:24.803 +02:00 [INF] Request finished in 397.444ms 200 application/json;charset=utf-8
+2020-09-03 15:19:20.234 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/fetchdata  
+2020-09-03 15:19:20.235 +02:00 [INF] Executing endpoint 'Fallback {*path:nonfile}'
+2020-09-03 15:19:20.237 +02:00 [INF] Sending file. Request path: '/index.html'. Physical path: '/Users/fawek/workspace/Hsf.ApplicationProcess/Hsf.ApplicatonProcess.Application/Hsf.ApplicatonProcess.August2020.Blazor/Client/wwwroot/index.html'
+2020-09-03 15:19:20.237 +02:00 [INF] Executed endpoint 'Fallback {*path:nonfile}'
+2020-09-03 15:19:20.237 +02:00 [INF] Request finished in 3.5143ms 200 text/html
+2020-09-03 15:19:20.276 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/_framework/blazor.boot.json  
+2020-09-03 15:19:20.286 +02:00 [INF] The file /_framework/blazor.boot.json.gz was not modified
+2020-09-03 15:19:20.287 +02:00 [INF] Request finished in 11.0255ms 304 application/json
+2020-09-03 15:19:20.393 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/_framework/wasm/dotnet.3.2.0.js  
+2020-09-03 15:19:20.394 +02:00 [INF] The file /_framework/wasm/dotnet.3.2.0.js.gz was not modified
+2020-09-03 15:19:20.394 +02:00 [INF] Request finished in 0.9178ms 304 application/javascript
+2020-09-03 15:19:22.527 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/Get  
+2020-09-03 15:19:22.527 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:19:22.527 +02:00 [INF] Route matched with {action = "Get", controller = "Applicant", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant] Get() on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:19:22.528 +02:00 [INF] Start getting applicant from database
+2020-09-03 15:19:22.528 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'Context' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=database 
+2020-09-03 15:19:22.528 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-03 15:19:22.533 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 6.0097ms
+2020-09-03 15:19:22.533 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Get (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:19:22.533 +02:00 [INF] Request finished in 6.8325ms 200 application/json; charset=utf-8
+2020-09-03 15:19:39.192 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/applicant/insert application/json; charset=utf-8 162
+2020-09-03 15:19:39.192 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:19:39.193 +02:00 [INF] Route matched with {action = "Insert", controller = "Applicant", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Insert(Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:19:39.207 +02:00 [INF] Start inserting applicant
+2020-09-03 15:19:39.208 +02:00 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Poland?fullText=true"
+2020-09-03 15:19:39.208 +02:00 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Poland?fullText=true"
+2020-09-03 15:19:39.520 +02:00 [INF] Received HTTP response after 311.7762ms - "OK"
+2020-09-03 15:19:39.520 +02:00 [INF] End processing HTTP request after 312.1387ms - "OK"
+2020-09-03 15:19:39.522 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-09-03 15:19:39.522 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 329.3634ms
+2020-09-03 15:19:39.522 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.Insert (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:19:39.522 +02:00 [INF] Request finished in 330.1251ms 200 
+2020-09-03 15:19:39.553 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/GetFromStorage?id=0  
+2020-09-03 15:19:39.553 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:19:39.555 +02:00 [INF] Route matched with {action = "GetFromStorage", controller = "Applicant", page = ""}. Executing controller action with signature Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant GetFromStorage(Int32) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:19:39.563 +02:00 [INF] Executing ObjectResult, writing value of type 'Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant'.
+2020-09-03 15:19:39.565 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 9.7519ms
+2020-09-03 15:19:39.565 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:19:39.566 +02:00 [INF] Request finished in 12.3718ms 200 application/json; charset=utf-8
+2020-09-03 15:20:11.187 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Applicant/GetFromStorage?id=0  
+2020-09-03 15:20:11.190 +02:00 [INF] Executing endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:20:11.191 +02:00 [INF] Route matched with {action = "GetFromStorage", controller = "Applicant", page = ""}. Executing controller action with signature Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant GetFromStorage(Int32) on controller Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController (Hsf.ApplicatonProcess.August2020.Blazor.Server).
+2020-09-03 15:20:11.192 +02:00 [INF] Executing ObjectResult, writing value of type 'Hsf.ApplicatonProcess.August2020.Domain.Models.Applicant'.
+2020-09-03 15:20:11.193 +02:00 [INF] Executed action Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server) in 2.2629ms
+2020-09-03 15:20:11.194 +02:00 [INF] Executed endpoint 'Hsf.ApplicatonProcess.August2020.Blazor.Server.Controllers.ApplicantController.GetFromStorage (Hsf.ApplicatonProcess.August2020.Blazor.Server)'
+2020-09-03 15:20:11.194 +02:00 [INF] Request finished in 7.1786ms 200 application/json; charset=utf-8
